@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .flag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20em;
+            width: 35em;
+            border: 1px black solid;
+        }
+
+        .japanese-flag {
+                background-color: red;
+                height: 8em;
+                width: 8em;
+                border-radius: 50%;
+        }
+        .arg-flag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20em;
+            width: 35em;
+            background-color: skyblue;
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10rem;
+                width: 35em;
+                background-color: white;
+                span {
+                    background-color: yellow;
+                    height: 7rem;
+                    width: 7rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="flag">
+            <div class="japanese-flag">
+            </div>
+        </div>
+        <div class="flag">
+            <div class="arg-flag">
+                <span><span></span></span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

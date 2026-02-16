@@ -101,10 +101,11 @@ section header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    h2 {
-        font-size: clamp(1.5rem, 1.9rem, 2.2rem);
-        font-weight: 500;
-    }
+}
+
+section header h2 {
+    font-size: clamp(1.5rem, 1.9rem, 2.2rem);
+    font-weight: 500;
 }
 
 header a {
@@ -115,32 +116,34 @@ header a {
     display: flex;
     flex-direction: row;
     gap: 2.2rem;
-    h3 {
-        font-size: clamp(1.3rem, 2.2rem, 2.2rem);
-        font-weight: 700;
-        text-align: left;
-        padding: 0 1rem;
-    }
+}
+
+.posts h3 {
+    font-size: clamp(1.3rem, 2.2rem, 2.2rem);
+    font-weight: 700;
+    text-align: left;
+    padding: 0 1rem;
 }
 
 .post {
     background-color: white;
     border-radius: 6px;
     padding: 1rem;
-    p {
-        padding: 0;
-        font-size: clamp(1rem, 1.5rem, 1.9rem);
-    }
 }
 
+.posts p {
+    padding: 0;
+    font-size: clamp(1rem, 1.5rem, 1.9rem);
+}
 .post-info {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    p {
-        font-size: clamp(0.9rem, 1.5rem, 1.5rem);
-        flex-shrink: 0;
-    }
+}
+
+.post-info p {
+    font-size: clamp(0.9rem, 1.5rem, 1.5rem);
+    flex-shrink: 0;
 }
 
 .Featured-works,.Blog-posts ul {
@@ -173,7 +176,7 @@ header a {
         margin-bottom: clamp(1rem, 2.7rem, 2.7rem);
         color: var(--tertiary-color);
     }
-    h3 {
+    h3, h2 {
         font-weight: 700;
         margin-top: 0;
         color: var(--tertiary-color);

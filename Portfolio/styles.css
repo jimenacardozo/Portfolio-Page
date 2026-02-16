@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-size: clamp(2.2rem, 6vw, 3rem);
+    font-size: clamp(1.3rem, 3rem, 4rem);
     font-weight: 700;
     color: #000;
     text-align: left;
@@ -14,7 +14,7 @@ h1 {
 
 .intro p {
     font-family: 'Roboto', sans-serif;
-    font-size: clamp(1.12rem, 1.5vw, 1.5rem);
+    font-size: clamp(1.12rem, 1.5rem, 1.5rem);
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -36,18 +36,18 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 150px;
+    gap: 1rem;
+    padding: 13rem;
 }
 
 button {
-    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
     font-weight: 700;
     color: white;
     background-color: var(--secondary-color);
     border: none;
     border-radius: 5px;
-    padding: 20px 25px;
+    padding: 1.1rem 1.6rem;
     letter-spacing: 0.02em;
 }
 
@@ -80,7 +80,7 @@ a {
     &:hover {
         color: var(--secondary-color);
     }
-    font-size: 1.3
+    font-size: 1.3rem;
 }
 
 .menu-toggle {
@@ -102,7 +102,7 @@ section header {
     justify-content: space-between;
     align-items: center;
     h2 {
-        font-size: clamp(1.5rem, 1.8vw, 2.2rem);
+        font-size: clamp(1.5rem, 1.9rem, 2.2rem);
         font-weight: 500;
     }
 }
@@ -116,7 +116,7 @@ header a {
     flex-direction: row;
     gap: 2.2rem;
     h3 {
-        font-size: clamp(1.3rem, 2vw, 2.2rem);
+        font-size: clamp(1.3rem, 2.2rem, 2.2rem);
         font-weight: 700;
         text-align: left;
         padding: 0 1rem;
@@ -129,7 +129,7 @@ header a {
     padding: 1rem;
     p {
         padding: 0;
-        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        font-size: clamp(1rem, 1.5rem, 1.9rem);
     }
 }
 
@@ -138,7 +138,7 @@ header a {
     flex-direction: row;
     gap: 0.5rem;
     p {
-        font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+        font-size: clamp(0.9rem, 1.5rem, 1.5rem);
         flex-shrink: 0;
     }
 }
@@ -150,7 +150,7 @@ header a {
         width: 25%;
         object-fit: cover;
         border-radius: 6px;
-        margin-right: clamp(1rem, 1vw, 3rem);
+        margin-right: clamp(1rem, 1rem, 3rem);
     }
     ul {
         list-style: none;
@@ -167,16 +167,14 @@ header a {
         border-bottom: 1px solid #e0e0e0;
     }
     p{
-        font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+        font-size: clamp(0.8rem, 1.5rem, 1.5rem);
     }
     h2 {
-        font-size: clamp(1.2rem, 1.6vw, 2.2rem);
-        margin-bottom: clamp(1rem, 2.7vw, 2.7rem);
+        margin-bottom: clamp(1rem, 2.7rem, 2.7rem);
         color: var(--tertiary-color);
     }
     h3 {
         font-weight: 700;
-        font-size: clamp(1.2rem, 1.6vw, 2.2rem);
         margin-top: 0;
         color: var(--tertiary-color);
         + span {
@@ -195,6 +193,14 @@ header a {
     }
 }
 
+.Featured-works h2, 
+.Featured-works h3 {
+    font-weight: 700;
+    font-size: clamp(1.2rem, 2rem, 2.2rem);
+    margin-top: 0;
+    color: var(--tertiary-color);
+}
+
 .Blog-posts p + p + p {
     color: grey;
 }
@@ -207,7 +213,7 @@ header a {
     margin: 0 19rem;
 }
 
-.blog-page .post h3 {
+.blog-page .post h2 {
     font-size: 2.5rem
 }
 
@@ -226,34 +232,34 @@ footer {
 
 footer .social-links a i, 
 footer .social-links a svg {
-    font-size: 45px !important; 
-    color: var(--tertiary-color) !important; 
-    display: inline-block !important;
-    width: auto !important;
-    height: auto !important;
+    font-size: 45px; 
+    color: var(--tertiary-color); 
+    display: inline-block;
+    width: auto;
+    height: auto;
     &:hover {
-        color: white !important;
-        background-color: var(--secondary-color) !important;
-        border-radius: 4px !important;
+        color: white;
+        background-color: var(--secondary-color);
+        border-radius: 4px;
     }
 }
 
 footer .social-links a i.fa-facebook-f, 
 footer .social-links a i.fa-linkedin-in {
-    background-color: var(--tertiary-color) !important;
-    color: white !important;
-    width: 30px !important;
-    height: 30px !important;
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 8px !important;
-    border-radius: 4px !important;
-    font-size: 28px !important;
+    background-color: var(--tertiary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 28px;
     &:hover {
-        color: white !important;
-        background-color: var(--secondary-color) !important;
-        border-radius: 4px !important;
+        color: white;
+        background-color: var(--secondary-color);
+        border-radius: 4px;
     }
 }
 
@@ -279,8 +285,16 @@ footer p {
     h1, .intro p {
         text-align: center;
     }
+    
+    h1 {
+        font-size: 2rem;
+    }
 
-    .introimg {
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .intro img {
         width: 13rem;
         aspect-ratio: 1/1;
         margin: 0 auto 2rem auto;
@@ -288,7 +302,7 @@ footer p {
     }
 
     .Recent-posts {
-        padding: 50px 20px;
+        padding: 0rem 1.8rem 1rem;
         a {
             display: none;
         }
@@ -298,10 +312,10 @@ footer p {
         }
         h2 {
             text-align: center;
-            font-size: clamp(1.3rem, 2vw, 2.2rem);
+            font-size: clamp(1.3rem, 1.4rem, 2.2rem);
         }
         p {
-            text-align: center;
+            text-align: start;
         }
     }
 
@@ -310,10 +324,18 @@ footer p {
         flex-direction: column;
         gap: 30px;
     }
+
+    .posts h3 {
+        font-size: 1.5rem;
+    }
+
+    .posts p {
+        font-size: 1rem;
+    }
     
     
     nav {
-        font-size: clamp(0.8rem, 3vw, 1.5rem);
+        font-size: clamp(0.8rem, 1.6rem, 1.5rem);
         padding: 0px;
         margin: 0;
         justify-content: end;
@@ -396,6 +418,14 @@ footer p {
         }
     }
 
+    .Featured-works,.Blog-posts p {
+        font-size: 1rem;
+    }
+
+    .home-page .Featured-works li:nth-child(5), .Featured-works li:nth-child(4), .Featured-works li:nth-child(2), .Featured-works li:nth-child(3) {
+        display: none;
+    }
+
     .Featured-works li {
         margin: 0;
     }
@@ -417,29 +447,28 @@ footer p {
         margin: 0;
     }
 
-    .blog-page .post h3 {
-        font-size: 1.5rem
+    .blog-page .post h2{
+        font-size: 1.6rem
     }
 
     .blog-page .post p {
         font-size: 1.2rem;
     }
 
-    .work-page li:nth-child(5) {
+    .home-page .Featured-works li:nth-child(n+2) {
+        display: none;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .work-page .Featured-works li:nth-child(5) {
+        display: flex;
+    }
+
+    .nav-links li {
         display: block;
     }
-
-    .work-page li:nth-child(4) {
-        display: none;
-    }
-
-    .work-page li:nth-child(2) {
-        display: none;
-    }
-
-    .work-page li:nth-child(3) {
-        display: none;
-    }
-
 }
 

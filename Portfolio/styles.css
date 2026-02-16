@@ -127,7 +127,7 @@ header a {
     border-radius: 6px;
     padding: 1rem;
     p {
-        padding: 0 1rem;
+        padding: 0;
         font-size: clamp(1rem, 1.5vw, 1.5rem);
     }
 }
@@ -142,7 +142,7 @@ header a {
     }
 }
 
-.Featured-works {
+.Featured-works,.Blog-posts ul {
     padding: 3rem 18rem;
     img {
         aspect-ratio: 4/3;
@@ -194,7 +194,19 @@ header a {
     }
 }
 
+.Blog-posts p + p + p {
+    color: grey;
+}
 
+.blog-page {
+    h1{
+        margin: 0 19rem;
+    }
+}
+
+.blog-page .post h3 {
+    font-size: clamp(1.2rem, 1.60rem, 3rem);
+}
 
 footer {
     margin: 160px 0 0;
@@ -208,6 +220,7 @@ footer {
         font-size: 2px;
     }
 }
+
 footer .social-links a i, 
 footer .social-links a svg {
     font-size: 45px !important; 
@@ -291,7 +304,6 @@ footer p {
         gap: 30px;
     }
 
-
     nav {
         font-size: clamp(0.8rem, 3vw, 1.5rem);
         padding: 20px;
@@ -362,6 +374,16 @@ footer p {
 
     .Featured-works li {
         margin: 0;
+    }
+
+    .blog-page h1{
+        margin:0;
+        padding: 1rem 1rem;
+        text-align: start;
+    }
+
+    .blog-page ul {
+        padding: 1rem 0rem;
     }
 }
 
